@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif ;
+}
+.navbar{
+   display: flex;
+  flex-wrap: wrap;
+  height: 60px;
+  background-color: rgba(248, 231, 231, 0.395);
+  backdrop-filter: 10px;
+  color: rgb(7, 0, 0);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.navbar h2{
+    background-color: black;
+    color: white;
+    padding: 0 10px ;
+    margin: 0 20px;
+}
+.list ul{
+    gap: 40px;
+    display: flex;
+    list-style: none;
+    
+}
+.list ul li{
+    font-weight: 600;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+background-image: url(images/pic-1.jpg);
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-position: none;
+  background-size: cover;
+  
+}
+.card{
+  display: flex;
+ flex-wrap: wrap;
+  color: white;
+background-color: rgba(6, 75, 136, 0.026);
+backdrop-filter: blur(10px);
+border: 1px solid rgba(255, 255, 255, 0.351);
+  padding: 30px;
+  width: 600px;
+  border-radius: 15px;
+
+}
+.card h3{
+    display: flex;  font-size: 35px;
+  padding: 20px;
+  text-align: center; justify-content: center;
+    margin-left: 120px;
+}
+.card p{
+    display: flex;
+    justify-content: center;  margin-left: 90px;
+  font: 18px;
+  line-height: 1.8rem;
+ text-align: center;
+}
+.card button{
+    padding: 15px;
+  margin-top: 10px; 
+  margin-left: 200px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+}
+
+.section-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.favourite-collection h3 {
+text-align: center;
+justify-content: center;
+margin-top: 20px; font-weight: 800; font-size: 30px;
+}
+h1{
+    font-weight: bolder; font-size: 60px; justify-content: center; align-items: center; margin-left: 30px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+
+.favourite-collection {
+  position: relative;
+  width: 300px;           
+  height: 200px;         
+  overflow: hidden;
+
+}
+
+.favourite-collection img {
+  position: absolute;
+top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  transition: opacity 0.35s ease;
+}
+
+/* original image visible, hover image hidden */
+.favourite-collection .back { opacity: 0; }
+.favourite-collection .front { opacity: 1; }
+
+/* on hover swap */
+.favourite-collection:hover .back { opacity: 1; }
+.favourite-collection:hover .front { opacity: 0; }
+.cont{
+display: flex;    
+justify-content: center;
+align-items: center;
+gap: 20px;
+
+}
+.secondary{
+    display: flex; 
+    margin: 50px 10px;
+}
+.shop{
+margin-top: 150px;
+margin-left: 100px;
+}
+.shop i{
+   font-size: 30px;
+}
+.shop h3{
+    font-size: 40px;
+}
+.shop p{
+    justify-content: center; margin-top: 20px;
+}
+
+.shop img{
+    height: 180px;
+margin-top: 80px;
+}
+.shop-img{
+    justify-content: end; align-items: end;
+}
+.shop-img img{
+height: 600px;
+
+}
+.footer{
+    display: flex;
+    flex: wrap;
+    border-top: 1px solid black;
+    display: flex;
+    gap: 100px;
+    margin-top: 30px;
+    padding: 30px;
+  justify-content: space-around;
+}
+.SHOP ul{
+   list-style: none;
+  font-size: 16px;
+}
+.SHOP li{
+   line-height: 30px;
+   margin-top: 10px;
+}
+.ABOUT ul{
+  list-style: none;
+  font-size: 16px;
+}
+.ABOUT li{
+ line-height: 30px;
+ margin-top: 10px;
+}
+.icons{
+    margin-left: 100px;
+   margin-top: 100px;
+}
+.icons i{
+font-size: 20px;
+ padding: 10px; color: white;
+    border: 1px solid black;
+    background-color: black;
+border-radius: 10px;
+}
+/* ========== this code help make Responsive Styles/website ========== */
+
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .shop {
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .shop-img img {
+        height: auto;
+        width: 100%;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .list ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .icon {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .cont {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .secondary {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 10px;
+    }
+
+    .shop {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .shop-img {
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .icons {
+        margin: 40px 0 0 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar h2 {
+        font-size: 20px;
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .list ul li {
+        font-size: 14px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .card p {
+        font-size: 14px;
+        margin-left: 0;
+        padding: 0 10px;
+    }
+
+    .card button {
+        margin: 10px auto 0 auto;
+        display: block;
+    }
+
+    .shop h3 {
+        font-size: 24px;
+    }
+
+    .shop i {
+        font-size: 20px;
+    }
+
+    .shop p {
+        font-size: 14px;
+    }
+
+    .shop img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .favourite-collection {
+        width: 90%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .favourite-collection img {
+        position: relative;
+        height: auto;
+    }
+}
