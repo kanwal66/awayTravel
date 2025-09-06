@@ -342,8 +342,8 @@ border-radius: 10px;
 
     .favourite-collection {
         width: 90%;
-        height: auto;
-        margin: 10px 0;
+          height: 300px;
+        margin: 5px 0;
     }
 
     .favourite-collection img {
